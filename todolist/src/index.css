@@ -1,0 +1,496 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #1e273c;
+  overflow-x: hidden;
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+h2 {
+  color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  color: #e79a6c;
+  padding: 12px;
+  margin: 16px;
+}
+
+div {
+  padding:0px;
+  margin:0px;
+
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+hr {
+  color: #e79a6c;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e79a6c;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navigationButton {
+  position: absolute;
+  outline:none;
+  width: 80px!important;
+  height: 40px!important;
+  right: 0px;
+  top: 18px;
+  background-color:#1e273c;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #181d3e;
+  display:inline-block;
+  cursor:pointer;
+  color:#e79a6c;
+  font-family:Arial;
+  font-size:13px;
+  padding:6px 6px 6px 6px;
+  margin: 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #154682;
+}
+
+.navigationButton:hover {
+  background-color:#191e3d;
+  color:#FFFFFF;
+}
+
+.headerNavigationButton {
+  outline:none;
+  width: 85px!important;
+  height: 40px!important;
+  right: 0px;
+  top: 18px;
+  background-color:#333a53;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+  border:1px solid #181d3e;
+  display:inline-block;
+  cursor:pointer;
+  color:#e79a6c;
+  font-family:Arial;
+  font-size:13px;
+  padding:6px 6px 6px 6px;
+  margin: 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #154682;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.headerNavigationButton:hover {
+  background-color:#191e3d;
+  color:#FFFFFF;
+}
+
+#button1 {
+  width:45px;
+  height:45px;
+  position:relative;
+  box-shadow: 0px 0px 0px 0px #3dc21b;
+  background-color:#44c767;
+  border:1px solid #18ab29;
+  display:inline-block;
+  cursor:pointer;
+  border-radius: 30px;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:19px;
+  padding:10px 10px 9px 12px;
+  margin: 10px;
+  text-decoration:none;
+  text-align: center;
+  text-shadow:0px 1px 0px #2f6627;
+}
+
+.taskTitle {
+  padding: 10px;
+  display: inline-block;
+
+  background-color: #1e273c;
+}
+
+.taskChk {
+  padding: 10px;
+  display: inline-block;
+  background-color: #3dc21b;
+
+}
+
+h3 {
+  color: #bdbdbe;
+  padding: 0px;
+    margin: 0px;
+}
+
+.ProjectItem {
+  background: #333a53;
+}
+
+.TaskItem {
+  background: #2d334a;
+  margin: 10px;
+}
+
+input[type="button"] {
+  width:100%;
+  height:100%;
+}
+
+.taskDetailsView {
+  width:50%;
+  height:50%;
+  padding: 10px 10px 25px 10px;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /*float:left;*/
+
+  background: #2d334a;
+  border-radius:10px;
+  box-shadow:1px 0px 30px 5px #000000;
+  /*background-color: #2b81af!important;*/
+}
+.detailControls {
+  width:99%;
+  height:100%;
+  height:25px;
+  margin: 0 auto;
+  /*background-color: #3dc21b;*/
+
+}
+
+.notesHeaderWrapper {
+  /*background-color: #3dc21b;*/
+  width:98%;
+  margin: 0 auto;
+}
+
+.detailDate {
+  color: #bdbdbe;
+  float:left;
+}
+
+.status {
+  color: #bdbdbe;
+  float:right;
+}
+
+.textWrapper {
+  margin: 22px 5px 0px 5px;
+  height:85%;
+}
+
+textarea {
+  width: 100%;
+  height:100%;
+  outline:none;
+  resize: none;
+  border-style: none;
+    border-color: Transparent;
+    overflow: auto;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;
+}
+
+.textAreaDisabled {
+  background-color: #aeaeae;
+  color: #828282;
+}
+
+.textAreaEnabled {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+#edit {
+  float:left;
+  width:25%;
+
+}
+#save {
+  float:right;
+  width:25%;
+}
+#close {
+  float:right;
+  width:25%;
+}
+
+.detailDate {
+  float:left;
+}
+
+.ProjectListHeader {
+  border-style: none;
+  border-color: #00FF00;
+}
+
+.ProjectListView {
+  border-style: none;
+    border-color: #FF0000;
+  width:100%;
+}
+.ProjectTaskSection {
+  border-style: none;
+  border-color: #FFFF00;
+  width:100%;
+  position: absolute;
+}
+
+.ProjectTaskDetails {
+  position:absolute;
+  padding: 0px;
+  left:0px;
+  top:0px;
+  background-color: rgba(45, 50, 73, 0.7);
+  border-color: #FF00FF;
+  opacity: 0;
+  display: none;
+  width:100%;
+  height:100%
+}
+
+.overlay {
+  position:absolute;
+  padding: 0px;
+  left:0px;
+  top:0px;
+  background-color: rgba(45, 50, 73, 0.75);
+  opacity: 1;
+  display: block;
+  width:100%;
+  height:100%
+}
+
+.overlayOpen {
+  position:absolute;
+  padding: 0px;
+  left:0px;
+  top:0px;
+  background-color: rgba(45, 50, 73, 0.75);
+  border-color: #FF00FF;
+  opacity: 1;
+  display: block;
+  pointer-events: none;
+  width:100%;
+  height:100%
+}
+
+
+.square {
+    height: 50px;
+    width: 104px;
+}
+
+.Tasks {
+  /*position: absolute;*/
+  /*padding:10px;*/
+  /*height:300px;*/
+  /*border-radius:10px;*/
+  background: #1e273c;
+  width:100%;
+  height:100%;
+  position:absolute;
+  display:block;
+  top: 0px;
+  /*top:150px;
+  left:250px;*/
+
+  opacity: 1;
+  /*box-shadow:1px 0px 30px 5px #000000;*/
+}
+
+/***
+
+***/
+
+.cell {
+  background-color: #333a53;
+  margin:0px;
+  padding:10px;
+  flex-direction:row;
+  height:60px;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.cell:hover {
+  background-color: #2d334a;
+}
+
+.header {
+  margin:0px;
+  padding:10px;
+  flex-direction:row;
+  height:100px;
+}
+
+.cellImage {
+  width:33px;
+  height:69px;
+  margin:-6px -0px -0px -0px
+}
+
+.commentImage {
+  /*margin:-6px -0px -0px -0px !important;*/
+}
+
+.box {
+  width:35px;
+  height:35px;
+  background-color:#3281FF!important;
+}
+
+.deleteButton {
+  width: 100%;
+  height: 100%;
+  text-align: center!important;
+  cursor: pointer;
+  background-color: #FF0000;
+}
+
+.cell div {
+  /*background-color: #00333a53;*/
+  border-style:none;
+  color:#FFFFFF;
+  margin:5px;
+  padding:4px;
+  text-align:left;
+  vertical-align: middle;
+}
+
+.flex {
+  flex:1;
+}
+
+.layout {
+  display:flex;
+  align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+}
+
+
+/** Animations **/
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+@keyframes slide1 { 100% { left: 0; } }
+
+@keyframes shrink {
+    100% { transform: scale(0.5); }
+}
+
+.shrink {
+  -webkit-animation: shrink 0.4s forwards;
+  -webkit-animation-delay: 0.4s;
+  animation: shrink 0.4s forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes grow {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+}
+
+.grow {
+  -webkit-animation: grow 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: grow 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+
+@keyframes slide {
+    100% { transform: translateX(0%); }
+}
+.wrapper {
+  perspective: 500px;
+  border-color: #34de1d;
+  position: absolute;
+    width:100%;
+    height:100%
+}
+
+.closeTrans {
+  transform: translate3d(0px, 0px, -250px);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.openTrans {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform .5s;
+  transform-style: preserve-3d;
+}
+
+.slideOpen {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.7s;
+  -webkit-animation-delay:0.5s;
+  transform-style: preserve-3d;
+}
+
+.slideClose {
+  transform: translate3d(100%, 0, 0px);
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.slide {
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+
+.fade-out {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeOut ease-in 1;
+  animation:fadeOut ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  display:block;
+  -webkit-animation:fadeIn ease-in 0.25s;  /* call our keyframe named fadeIn, u2se animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 0.25s;
+  animation:fadeIn ease-in 0.25s;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.2s;
+  -moz-animation-duration:0.2s;
+  animation-duration:0.2s;
+}
