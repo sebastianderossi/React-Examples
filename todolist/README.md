@@ -4,19 +4,19 @@
 
 *Click image above to see it in action.*
 
-New To-Do List application! Yes...my friends, this exactly what you'd expect from a typical "To Do" list application
+**New To-Do List application!** Yes...my friends, this exactly what you'd expect from a typical "To Do" list application
 
 To-Do List allows users to create lists to manage their tasks on a browser. These lists contain tasks and task details. The task details view allows a user to see when a task was created, it's current status and users have the ability to add/edit notes if needed. Initial data is load externally and is display using a UITableView.
 
-To-Do List features:
--Load/display external data
--Users can add/delete to Project list
--Users can choose the priority level of each project within the Project List
--Users can create new tasks within a Task List
--Users can edit notes and update tasks
--Users can modify tasks status from Pending to Complete (vice versa)
--Icons help identify priority + status on a project or task
--Users can create/modify task notes
+**To-Do List features:**
+- Load/display external data
+- Users can add/delete to Project list
+- Users can choose the priority level of each project within the Project List
+- Users can create new tasks within a Task List
+- Users can edit notes and update tasks
+- Users can modify tasks status from Pending to Complete (vice versa)
+- Icons help identify priority + status on a project or task
+- Users can create/modify task notes
 
 ReactJS: ToDo List built using **React.js**
 
