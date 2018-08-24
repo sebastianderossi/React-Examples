@@ -28,7 +28,7 @@ class Stats extends Component {
 		super(props);
 		//SD:Testing stats, set to true timer will be set to 59min 0s
 
-		let debug = true;
+		let debug = false;
 
 		let start = new Date();
 		if (debug === true) {
