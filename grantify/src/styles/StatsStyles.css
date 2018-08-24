@@ -1,0 +1,13 @@
+.nav {
+	width:100%;
+	background-color: #94d500;
+	display: block;
+}
+
+.nav .nav-link{
+	color:#0e5155!important;
+}
+
+.nav .nav-link:hover{
+	color:#FFFFFF!important;
+}
